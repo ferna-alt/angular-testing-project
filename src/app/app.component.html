@@ -1,3 +1,14 @@
 <div>
   <h1>Welcome to {{ title }}!</h1>
 </div>
+
+<div class="form group" >
+  <input type="text" class= "card-body form-control " placeholder="introduce la tarea" [ngModel]="modalID" >
+  <button class="btn btn-dark"  >Agregar</button>
+</div>
+
+<div class="form group" >
+  <input type="text" class= "card-body form-control" placeholder="acualiza la tarea">
+
+  <button class="btn btn-warning btn-block" >Actualizar</button>
+</div>

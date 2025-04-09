@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-task-list',
@@ -7,7 +7,10 @@ import { Component } from '@angular/core';
 })
 export class TaskListComponent {
 
+  @Input() modalID: any  
   tasks: string[] = [];
+
+  
 
   constructor() {
     console.log('TaskListComponent initialized');
